@@ -1,0 +1,57 @@
+.about-us{
+    position: relative;
+    &__container{
+        display: flex;
+        flex-direction: column;
+    }
+    &__top{
+        display: flex;
+        flex-direction: column;
+    }
+    &__breadcrumb{
+        display: flex;
+        margin-top: 15.5rem;
+    }
+    &__title{
+        font-size: 32px;
+        line-height: 39px;
+        color: #272042;
+        margin-top: 15px;
+    }
+    &__rect{
+        width: 3.4rem;
+        border: 2px solid #A39385;;
+        margin-top: 1.2rem;
+    }
+    &__bottom{
+        display: flex;
+        margin-bottom: 18rem;
+        padding-top: 5rem;
+    }
+    &__text{
+        font-weight: normal;
+        font-size: 16px;
+        line-height: 22px;
+        width: 46rem;
+    }
+    &__text span{
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 22px;
+    }
+    &__img{
+        position: relative;
+        margin-left: auto;
+        position: absolute;
+        right: 0;
+        top: 28rem;
+    }
+   
+}
+.breadcrumb__text{
+    margin-left: 0.6rem;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 15px;  
+    color: rgba(39, 32, 66, 0.5);
+}

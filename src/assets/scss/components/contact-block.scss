@@ -1,0 +1,96 @@
+.contact{
+    position: relative;
+    height: 100%;
+    &__container{
+        display: flex;
+        flex-direction: column;
+        height: 92rem;
+    }
+    &__top{
+        display: flex;
+        flex-direction: column;
+    }
+    &__breadcrumb{
+        display: flex;
+        margin-top: 15.5rem;
+    }
+    &__title{
+        font-size: 32px;
+        line-height: 39px;
+        color: #272042;
+        margin-top: 15px;
+    }
+    &__rect{
+        width: 3.4rem;
+        border: 2px solid #A39385;;
+        margin-top: 1.2rem;
+    }
+    &__bottom{
+        display: flex;
+        margin-bottom: 18rem;
+        padding-top: 5rem;
+    }
+    &__text{
+        font-weight: normal;
+        font-size: 16px;
+        line-height: 22px;
+        width: 46rem;
+    }
+    &__name{
+        margin-bottom: 3rem;
+    }
+    &__text span{
+        font-style: normal;
+        font-weight: 600;
+        font-size: 18px;
+        line-height: 24px;
+        color: #333333;
+    }
+    &__connect{
+        font-style: normal;
+        font-weight: 600;
+        font-size: 2rem;
+        line-height: 24px;
+        margin-top: 7rem;
+        margin-bottom: 3rem;
+        color: black;
+    }
+    &__img{
+        background-image: url(../imgs/map.jpg);
+        width: 60rem;
+        height: 92rem;
+        position: relative;
+        margin-left: auto;
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+    &__img img{
+        position: relative;
+        top: 37rem;
+        left: 25rem;
+    }
+    &__links{
+        display: flex;
+        flex-direction: column;
+    }
+    &__link{
+        display: flex;
+        margin-bottom: 1.5rem;
+    }
+    &__num{
+        margin-left: 2rem;
+
+    }
+    &__text{
+        color: #A39385;
+    }
+   
+}
+.breadcrumb__text{
+    margin-left: 0.6rem;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 15px;  
+    color: rgba(39, 32, 66, 0.5);
+}

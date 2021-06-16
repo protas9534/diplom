@@ -1,0 +1,92 @@
+// для каждого компонента нужно импортить переменные, чтобы их использовать
+@import "../main/parameters";
+
+.footer{
+    background-color: #343E45;
+    height: 36rem;
+    color: white;
+    padding-top: 4.5rem;
+    padding-bottom: 5.3rem;
+    &__container{
+        display: flex;
+        justify-content: space-between;
+        height: 100%;
+    }
+    &__left{
+        display: flex;
+        flex-direction: column;
+    }
+    &__left-top{
+        display: flex;
+    }
+    &__logo{
+        margin-right: 4.65rem;
+        height: 4rem;
+        margin-top: 0.5rem;
+    }
+    &__left-nav{
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 30px;
+    }
+    &__left-nav--item{
+        color: white;
+        display: block;
+    }
+    &__left-bottom{
+        margin-top: auto;
+        font-weight: normal;
+        font-size: 12px;
+        line-height: 15px;
+        color: rgba(255, 255, 255, 0.2);
+    }
+    &__center{
+        display: flex;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 30px;
+    }
+    &__center-col{
+        width: 12.4rem;
+
+    }
+    &__center-item{
+        color: #EEE9E4;
+        display: block;
+    }
+    &__right{
+        display: flex;
+        flex-direction: column;
+    }
+    &__right-title{
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 22px;
+        margin-bottom: 1rem;
+    }
+    &__right-address{
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 30px;
+        width: 218px;
+        margin-bottom: 3rem;
+    }
+    &__right-link{
+        display: flex;
+        margin-bottom: 0.3rem;
+    }
+    &__right-text {
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 30px;
+        color: #B8A99C;
+        margin-left: 1rem;
+    }
+    &__right-contact-us{
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 17px;
+        color: #B8A99C;
+        margin-top: auto;
+    }
+}

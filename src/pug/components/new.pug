@@ -1,0 +1,21 @@
+.new 
+    .container.new__container 
+        .new__title Новинки каталога
+        .new__nav 
+            .new__nav-link Кольца
+            .new__nav-link Серьги
+            .new__nav-link Падвески
+        .new__slider 
+            mixin product(vimg, vprice, voldprice, vtext)
+                .slider__col 
+                    .product
+                        .product__img 
+                            img(src=vimg, alt="product")
+                        .product__price=vprice
+                        .product__old-price=voldprice
+                        .product__text=vtext
+            +product('./assets/imgs/ring1.png','12 990 ₽','28 800 ₽','Кольцо из желтого золота с родированием с бриллиантом')            
+            +product('./assets/imgs/ring2.png','10 750 ₽','25 500 ₽','Кольцо из желтого золота с родированием с бриллиантом')
+            +product('./assets/imgs/ring3.png','7 490 ₽','19 250 ₽','Кольцо из белого золота с бриллиантом')            
+            +product('./assets/imgs/ring4.png','9 990 ₽','19 250 ₽','Кольцо из белого золота')            
+        button.new__btn перейти в каталог

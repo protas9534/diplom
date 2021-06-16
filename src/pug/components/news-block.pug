@@ -1,0 +1,39 @@
+.news 
+    .container.news__container 
+        .news__top 
+            .news__breadcrumb 
+                img(src="assets/imgs/diamond.svg", alt="")
+                .breadcrumb__text Новости
+            .news__title Новости
+            .news__rect
+        .news__bottom
+            .news__nav
+                a(href="#").news__first Новости компании
+                a(href="").news__second Акционерам
+            .news__galery
+                mixin news-card(nimg, ndate, nviwed, ntitle) 
+                    .news__card
+                        .news__img-bg 
+                            img(src=nimg, alt="news-img")
+                        .news__card-top
+                            .news__date=ndate
+                            img(src="./assets/imgs/oko.svg", alt="").news__viewed-img
+                            .news__viewed=nviwed
+                        .news__card-title=ntitle
+                +news-card('./assets/imgs/news1.jpg','26 декабря 2019','38','Что называют ювелирной керамикой?')
+                +news-card('./assets/imgs/news2.jpg','22 декабря 2020','38','Наши ювелиры. Закулисье Demetra-Sapphire Jewelry') 
+                +news-card('./assets/imgs/news3.jpg','18 декабря 2020','38','Что такое ювелирная смола?') 
+                +news-card('./assets/imgs/news4.jpg','04 декабря 2020','38','Декабрьские эксклюзивные ювелирные украшения от DSJ') 
+                +news-card('./assets/imgs/news5.jpg','30 ноября 2020','38','Любимые оттенки камней знаменитостей') 
+                +news-card('./assets/imgs/news6.jpg','26 ноября 2020','38','Отличная новость! Объявляем «чёрную пятницу» на всё! ') 
+                +news-card('./assets/imgs/news7.jpg','26 декабря 2019','38','Какие есть ювелирные камни синего цвета?') 
+                +news-card('./assets/imgs/news8.jpg','26 декабря 2019','38','Как оцениваются ювелирные украшения из бронзы?') 
+                +news-card('./assets/imgs/news9.jpg','26 декабря 2019','38','Идеи подарков ко дню матери от Demetra-Sapphire Jewelry')             
+            .news__pagination 
+                a(href="#") 1
+                a(href="#") 2
+                a(href="#") 3
+                a(href="#") 4
+                a(href="#") 5
+                a(href="#").news__pagination-rect
+                    img(src="assets/imgs/vector-slide.svg", alt="")
