@@ -1,0 +1,31 @@
+.catalog{
+    height: 100%;
+    &__container{
+        display: flex;
+        flex-direction: column;
+        height: 100%
+    }
+    &__top{
+        display: flex;
+        flex-direction: column;
+    }
+    &__breadcrumb{
+        display: flex;
+        margin-top: 15.5rem;
+    }
+    &__title{
+        font-size: 3.2rem;
+        line-height: 3.9rem;
+        color: #272042;
+        margin-top: 1.5rem;
+        margin-bottom: 2rem;
+    }
+}
+
+.breadcrumb__text{
+    margin-left: 0.6rem;
+    font-weight: normal;
+    font-size: 1.2rem;
+    line-height: 1.5rem;  
+    color: rgba(39, 32, 66, 0.5);
+}

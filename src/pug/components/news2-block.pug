@@ -1,0 +1,34 @@
+.action 
+    .container.action__container 
+        .action__top 
+            .action__breadcrumb 
+                img(src="assets/imgs/diamond.svg", alt="")
+                .breadcrumb__text Новости
+            .action__title Новости
+            .action__rect
+        .action__bottom
+            .action__nav
+                a(href="news.html").action__first Новости компании
+                a(href="#").action__second Акционерам
+            .action__galery
+                mixin news-card(ndate, nviwed, ntitle) 
+                    a(href="#").action__card
+                        .action__card-top
+                            .action__date=ndate
+                            img(src="./assets/imgs/oko.svg", alt="").news2__viewed-img
+                            .action__viewed=nviwed
+                        .action__card-title=ntitle
+                        .action__card-button Подробнее
+                            img(src="assets/imgs/vector-slide.svg", alt="")
+                +news-card('1 августа 2020','15','Сообщение о созыве годового общего собрания акционеров акционерного общества «Деметра-сапфаерр»')
+                +news-card('15 июля 2020','41','Уведомление акционерного общества «Деметра-сапфаерр» о возможности приобретения акционерами целого числа размещаемых ценных бумаг')
+                +news-card('25 мая 2020','22','Отчет об итогах голосованияна годовом общем собрании акционеров акционерного общества «Деметра-сапфаерр»')
+                +news-card('22 марта 2020','36','Сообщение о созыве годового общего собрания акционеров АО «Деметра-сапфаерр»')        
+            .action__pagination 
+                a(href="#") 1
+                a(href="#") 2
+                a(href="#") 3
+                a(href="#") 4
+                a(href="#") 5
+                a(href="#").action__pagination-rect
+                    img(src="assets/imgs/vector-slide.svg", alt="")

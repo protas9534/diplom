@@ -1,0 +1,193 @@
+.ring 
+    .container.ring__container 
+        .ring__top 
+            .ring__breadcrumb 
+                img(src="assets/imgs/diamond.svg", alt="")
+                .breadcrumb__text Ювелирные украшения  /  Кольца  /  Кольцо из белого золота 585 пробы с бриллиантами и аквамарином
+            .ring__card 
+                .ring__card-img 
+                    img(src="./assets/imgs/ring9.png", alt="").ring__img
+                .ring__card-discription 
+                    .ring__card-rating 
+                        img(src="./assets/imgs/star1.svg", alt="").ring__card-star
+                        img(src="./assets/imgs/star1.svg", alt="").ring__card-star
+                        img(src="./assets/imgs/star1.svg", alt="").ring__card-star
+                        img(src="./assets/imgs/star0.svg", alt="").ring__card-star
+                        img(src="./assets/imgs/star0.svg", alt="").ring__card-star
+                    .ring__card-text Кольцо из белого золота 585 пробы с бриллиантами и аквамарином
+                    .ring__card-price 51 490 ₽
+                    .ring__card-price-old 68 490 ₽
+                    .ring__card-size Размеры
+                    .ring__card-size-items 
+                        .ring__radio
+                            <input class="radio__size" type="radio" name="content" id="17" checked>
+                            <label for="17" class="ring__card-size-item"> 17
+                        .ring__radio
+                            <input class="radio__size" type="radio" name="content" id="17,5">
+                            <label for="17,5" class="ring__card-size-item"> 17,5
+                        .ring__radio
+                            <input class="radio__size" type="radio" name="content" id="18">
+                            <label for="18" class="ring__card-size-item"> 18
+                    .ring__card-buttons
+                        button.ring__cart
+                            img(src="./assets/imgs/plus.svg", alt="").ring__cart-m
+                            img(src="./assets/imgs/plus-w.svg", alt="").ring__cart-w
+                            .ring__cart-text В корзину
+                        button.ring__liked
+                            img(src="./assets/imgs/like.svg", alt="")
+                            .ring__liked-text В избранное
+.discription 
+    .container.discription__container 
+        .discription__title Описание и характеристики
+        .discription__block 
+            .discription__left 
+                .discription__item 
+                    .discription__item-title общие сведения
+                    .discription__main 
+                        .discription__line 
+                            .discription__var Арткул
+                            .discription__points 
+                            .discription__value 1В00248-015
+                        .discription__line 
+                            .discription__var Тип металла
+                            .discription__points 
+                            .discription__value Белое золото
+                        .discription__line 
+                            .discription__var Проба
+                            .discription__points 
+                            .discription__value 585
+                        .discription__line 
+                            .discription__var Вес
+                            .discription__points 
+                            .discription__value 1.84 г
+                        .discription__line 
+                            .discription__var Тип вставки
+                            .discription__points 
+                            .discription__value Аквамарин
+                        .discription__line 
+                            .discription__var 
+                            .discription__points 
+                            .discription__value Бриллиант
+            .discription__right
+                .discription__item 
+                    .discription__item-title Аквамарин
+                    .discription__main 
+                        .discription__line 
+                            .discription__var Тип вставки
+                            .discription__points 
+                            .discription__value Аквамарин
+                        .discription__line 
+                            .discription__var Форма вставки
+                            .discription__points 
+                            .discription__value Овал
+                        .discription__line 
+                            .discription__var Коллическтво
+                            .discription__points 
+                            .discription__value 1 шт
+                        .discription__line 
+                            .discription__var Цвет
+                            .discription__points 
+                            .discription__value Голубой
+                .discription__item 
+                    .discription__item-title Бриллиант
+                    .discription__main 
+                        .discription__line 
+                            .discription__var Тип вставки
+                            .discription__points 
+                            .discription__value Бриллиант
+                        .discription__line 
+                            .discription__var Форма вставки
+                            .discription__points 
+                            .discription__value Круг
+                        .discription__line 
+                            .discription__var Коллическтво
+                            .discription__points 
+                            .discription__value 18 шт
+                        .discription__line 
+                            .discription__var Цвет
+                            .discription__points 
+                            .discription__value Бесцветный
+.set
+    .container.set__container 
+        .set__title Украшения из комплекта
+        .set__block 
+            mixin product(vimg, vprice, voldprice, vtext, vtext_h, ratingTrue1, ratingTrue2, ratingTrue3, ratingTrue4, ratingTrue5)
+                .slider__col 
+                    a(href="").product
+                        .product__img 
+                            img(src=vimg, alt="product")
+                        .product__price=vprice
+                        .product__old-price=voldprice
+                            .product__rating
+                                .rating__item
+                                    - if(ratingTrue1)
+                                        img(src="./assets/imgs/star1.svg", alt="") 
+                                    - else 
+                                        img(src="./assets/imgs/star0.svg", alt="")
+                                .rating__item
+                                    - if(ratingTrue2)
+                                        img(src="./assets/imgs/star1.svg", alt="") 
+                                    - else 
+                                        img(src="./assets/imgs/star0.svg", alt="")
+                                .rating__item
+                                    - if(ratingTrue3)
+                                        img(src="./assets/imgs/star1.svg", alt="") 
+                                    - else 
+                                        img(src="./assets/imgs/star0.svg", alt="")
+                                .rating__item
+                                    - if(ratingTrue4)
+                                        img(src="./assets/imgs/star1.svg", alt="") 
+                                    - else 
+                                        img(src="./assets/imgs/star0.svg", alt="")
+                                .rating__item
+                                    - if(ratingTrue5)
+                                        img(src="./assets/imgs/star1.svg", alt="") 
+                                    - else 
+                                        img(src="./assets/imgs/star0.svg", alt="")
+                        .product__text=vtext
+                            .product__text_h=vtext_h
+                        .product__btn в корзину
+            +product('./assets/imgs/set1.png','51 490 ₽','68 490 ₽','Кольцо из белого золота с родированием с бриллиантом','Белое золото, 585°Вставки: бриллианты Вес: 0,94 г', true, true, true, true, true)            
+            +product('./assets/imgs/set2.png','32 990 ₽','58 800 ₽','Подвеска из белого золота с родированием с бриллиантом','Белое золото, 585°Вставки: бриллианты Вес: 1,85 г', true, true, true, true, true)
+            +product('./assets/imgs/set3.png','42 990 ₽','60 500 ₽','Серьги из белого золота с родированием с бриллиантом','Белое золото, 585°Вставки: бриллианты Вес: 2,31 г', true, true, true, false, false)            
+.viewed
+    .container.viewed__container 
+        .viewed__title Недавно просмотренные
+        .viewed__slider 
+            +product('./assets/imgs/ring1.png','12 990 ₽','28 800 ₽','Кольцо из желтого золота с родированием с бриллиантом','Желтое золото, 585° Вставки: бриллианты Вес: 2,27 г', true, true, true, true, true)            
+            +product('./assets/imgs/ring2.png','10 750 ₽','25 500 ₽','Кольцо из желтого золота с родированием с бриллиантом','Желтое золото, 585° Вставки: бриллианты Вес: 2,27 г', true, true, true, true, true)
+            +product('./assets/imgs/ring3.png','7 490 ₽','19 250 ₽','Кольцо из белого золота с бриллиантом','Белое золото, 585° Вставки: бриллианты Вес: 2,27 г', true, true, true, false, false)            
+            +product('./assets/imgs/ring4.png','9 990 ₽',' ','Кольцо из белого золота','Белое золото, 585° Вставки: бриллианты Вес: 2,27 г', true, true, true, true, false)
+.review
+    .container.review__container 
+        .review__top
+            .review__title Отзывы и оценки
+            .review__text К сожалению, отзывов к этому украшению пока нет. Ваш отзыв может стать первым.
+            .review__button Оценить украшение
+        .review__bottom
+            .review__title.review__title2 Отзывы и оценки
+            .review__slider 
+                .review__slide
+                    .review__slide-name Анна Китова
+                    .review__slide-date 01.03.2021
+                    .review__slide-rating 
+                        img(src="./assets/imgs/star1.svg", alt="").ring__card-star
+                        img(src="./assets/imgs/star1.svg", alt="").ring__card-star
+                        img(src="./assets/imgs/star1.svg", alt="").ring__card-star
+                        img(src="./assets/imgs/star1.svg", alt="").ring__card-star
+                        img(src="./assets/imgs/star1.svg", alt="").ring__card-star
+                    .review__slide-text Очень милое колечко. Я доволна.
+                .review__slide
+                    .review__slide-name Тайный покупатель
+                    .review__slide-date 01.03.2021
+                    .review__slide-rating 
+                        img(src="./assets/imgs/star1.svg", alt="").ring__card-star
+                        img(src="./assets/imgs/star1.svg", alt="").ring__card-star
+                        img(src="./assets/imgs/star1.svg", alt="").ring__card-star
+                        img(src="./assets/imgs/star1.svg", alt="").ring__card-star
+                        img(src="./assets/imgs/star1.svg", alt="").ring__card-star
+                    .review__slide-text Очень понравилось колечко. Я такое искала. Тоненькое, но красиво вырисовывается сердечко, и мило переливается с бриллиантом
+            .review__button Оценить украшение
+                    
+
+            

@@ -55,15 +55,26 @@
         line-height: 20px;
         margin-top: 4.7rem;
         margin-bottom: 11.4rem;
-        transition: 3s;
+        position: relative;
+        transition: .5s linear;
         &:hover{
-            
-            // background: #f09433; 
-            // background: -moz-linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%); 
-            // background: -webkit-linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%); 
-            background: linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%); 
-  }
-              
+            background: none;
+            .inst__btn2{
+                display: block;
+            }
+        }   
+
+    }
+    &__btn2{
+        width: 24.7rem;
+        height: 5rem;
+        background: linear-gradient(80.45deg, #FED576 -10.24%, #F47133 20.36%, #BC3081 60.53%, #4C63D2 105.94%);
+        border-radius: 10rem; 
+        display: none;  
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: -1;
     }
 }
 .btn__img{

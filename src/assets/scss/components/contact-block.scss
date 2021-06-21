@@ -1,5 +1,4 @@
 .contact{
-    position: relative;
     height: 100%;
     &__container{
         display: flex;
@@ -59,9 +58,8 @@
         background-image: url(../imgs/map.jpg);
         width: 60rem;
         height: 92rem;
-        position: relative;
         margin-left: auto;
-        // position: absolute;
+        position: absolute;
         right: 0;
         top: 0;
     }

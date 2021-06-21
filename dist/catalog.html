@@ -1,0 +1,484 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/app.css">
+    <title>Document</title>
+  </head>
+  <body> 
+    <header class="header">
+      <div class="container header__container"> 
+        <div class="header__logo"><a class="logo" href="index.html"><img src="assets/imgs/logo.svg" alt="jewelry"></a></div>
+        <nav class="header__nav"> 
+          <ul class="nav__list">
+            <li class="nav__item"> <a class="nav__link about" href="about-us.html">О компании</a></li>
+            <li class="nav__item"> <a class="nav__link" href="catalog.html">Каталог</a></li>
+            <li class="nav__item"> <a class="nav__link" href="delivery.html">Доставка</a></li>
+            <li class="nav__item"> <a class="nav__link" href="news.html">Новости</a></li>
+            <li class="nav__item"> <a class="nav__link" href="contact.html">Контакты</a></li>
+          </ul>
+        </nav>
+        <div class="header__icons"><a class="header__ico-link" href="liked.html"><img src="assets/imgs/like.svg" alt="like"></a><a class="header__ico-link" href="#"><img src="assets/imgs/search.svg" alt="search"></a><a class="header__ico-link" href="purchases.html"><img src="assets/imgs/cart.svg" alt="cart"></a></div>
+      </div>
+    </header>
+    <div class="catalog"> 
+      <div class="container catalog__container"> 
+        <div class="catalog__top"> 
+          <div class="catalog__breadcrumb"> <img src="assets/imgs/diamond.svg" alt="">
+            <div class="breadcrumb__text">Ювелирные украшения / Кольца</div>
+          </div>
+          <div class="catalog__title">Кольца</div>
+          <div class="catalog__filter"> 
+            <div class="catalog__filter-item"> 
+              <div class="catalog__filter-title">Категория</div>
+              <p class="catalog__filter-radio">
+                <div class="radio"><input class="radio__input" type="radio" name="category" id="a1" checked>
+<label for="a1"  class="radio__label"> Кольца
+                </div>
+                <div class="radio"><input class="radio__input" type="radio" name="category" id="a2">
+<label for="a2"  class="radio__label"> Серьги
+                </div>
+                <div class="radio"><input class="radio__input" type="radio" name="category" id="a3">
+<label for="a3"  class="radio__label"> Подвески
+                </div>
+              </p>
+            </div>
+            <div class="catalog__filter-item"> 
+              <div class="catalog__filter-title">Материал</div>
+              <p class="catalog__filter-radio">
+                <div class="radio"><input class="radio__input" type="radio" name="material" id="a4" checked>
+<label for="a4"  class="radio__label"> Золото
+                </div>
+                <div class="radio"><input class="radio__input" type="radio" name="material" id="a5">
+<label for="a5"  class="radio__label"> Серебро
+                </div>
+              </p>
+            </div>
+            <div class="catalog__filter-item"> 
+              <div class="catalog__filter-title">Вставка</div>
+              <p class="catalog__filter-radio">
+                <div class="radio"><input class="radio__input" type="radio" name="insert" id="a6" checked>
+<label for="a6"  class="radio__label"> Бриллиант
+                </div>
+                <div class="radio"><input class="radio__input" type="radio" name="insert" id="a7">
+<label for="a7"  class="radio__label"> Сапфир
+                </div>
+                <div class="radio"><input class="radio__input" type="radio" name="insert" id="a8">
+<label for="a8"  class="radio__label"> Изумруд
+                </div>
+                <div class="radio"><input class="radio__input" type="radio" name="insert" id="a9">
+<label for="a9"  class="radio__label"> Рубин
+                </div>
+                <div class="radio"><input class="radio__input" type="radio" name="insert" id="a10">
+<label for="a10"  class="radio__label"> Топаз
+                </div>
+              </p>
+            </div>
+            <div class="catalog__filter-item"> 
+              <div class="catalog__filter-title">Проба</div>
+              <p class="catalog__filter-radio">
+                <div class="radio"><input class="radio__input" type="radio" name="content" id="a11">
+<label for="a11"  class="radio__label"> 585
+                </div>
+                <div class="radio"><input class="radio__input" type="radio" name="content" id="a12" checked>
+<label for="a12" class="radio__label"> 750
+                </div>
+                <div class="radio"><input class="radio__input" type="radio" name="content" id="a13">
+<label for="a13" class="radio__label"> 925
+                </div>
+              </p>
+            </div>
+            <div class="catalog__filter-item"> 
+              <div class="catalog__filter-title">Наличие</div>
+              <p class="catalog__filter-radio">
+                <div class="radio"><input class="radio__input" type="radio" name="availability" id="a14"> 
+<label for="a14" class="radio__label"> Есть в наличии
+                </div>
+              </p>
+            </div>
+          </div>
+          <div class="catalog__sort">
+            <div class="catalog__sort-title">Сортировать по:</div>
+            <div class="catalog__sort-item">Популярности</div>
+            <div class="catalog__sort-item">По новизне</div>
+            <div class="catalog__sort-item">По цене</div>
+          </div>
+          <div class="catalog__galery">
+                        <div class="galery__col"> <a class="product" href="">
+                            <div class="product__img"> <img src="./assets/imgs/ring8.png" alt="product"></div>
+                            <div class="product__price">10 250 ₽</div>
+                            <div class="product__old-price"> 
+                              <div class="product__rating">
+                                <div class="rating__item"><img src="./assets/imgs/star1.svg" alt="">
+                                </div>
+                                <div class="rating__item"><img src="./assets/imgs/star1.svg" alt="">
+                                </div>
+                                <div class="rating__item"><img src="./assets/imgs/star1.svg" alt="">
+                                </div>
+                                <div class="rating__item"><img src="./assets/imgs/star1.svg" alt="">
+                                </div>
+                                <div class="rating__item"><img src="./assets/imgs/star0.svg" alt="">
+                                </div>
+                              </div>
+                            </div>
+                            <div class="product__text">Кольцо из комбинированного золота с бриллиантами
+                              <div class="product__text_h">Желтое золото, 585° Вставки: бриллианты Вес: 2,27 г</div>
+                            </div>
+                            <div class="product__btn">в корзину</div></a></div>
+                        <div class="galery__col"> <a class="product" href="">
+                            <div class="product__img"> <img src="./assets/imgs/ring7.png" alt="product"></div>
+                            <div class="product__price">9 250 ₽</div>
+                            <div class="product__old-price">12 500 ₽
+                              <div class="product__rating">
+                                <div class="rating__item"><img src="./assets/imgs/star1.svg" alt="">
+                                </div>
+                                <div class="rating__item"><img src="./assets/imgs/star1.svg" alt="">
+                                </div>
+                                <div class="rating__item"><img src="./assets/imgs/star1.svg" alt="">
+                                </div>
+                                <div class="rating__item"><img src="./assets/imgs/star0.svg" alt="">
+                                </div>
+                                <div class="rating__item"><img src="./assets/imgs/star0.svg" alt="">
+                                </div>
+                              </div>
+                            </div>
+                            <div class="product__text">Кольцо из золота с родированием с бриллиантом
+                              <div class="product__text_h">Желтое золото, 585° Вставки: бриллианты Вес: 2,31 г</div>
+                            </div>
+                            <div class="product__btn">в корзину</div></a></div>
+                        <div class="galery__col"> <a class="product" href="">
+                            <div class="product__img"> <img src="./assets/imgs/ring6.png" alt="product"></div>
+                            <div class="product__price">18 750 ₽</div>
+                            <div class="product__old-price">27 000 ₽
+                              <div class="product__rating">
+                                <div class="rating__item"><img src="./assets/imgs/star1.svg" alt="">
+                                </div>
+                                <div class="rating__item"><img src="./assets/imgs/star1.svg" alt="">
+                                </div>
+                                <div class="rating__item"><img src="./assets/imgs/star1.svg" alt="">
+                                </div>
+                                <div class="rating__item"><img src="./assets/imgs/star1.svg" alt="">
+                                </div>
+                                <div class="rating__item"><img src="./assets/imgs/star1.svg" alt="">
+                                </div>
+                              </div>
+                            </div>
+                            <div class="product__text">Кольцо из белого золота 585 пробы с бриллиантами
+                              <div class="product__text_h">Белое золото, 585° Вставки: бриллианты Вес: 1,85 г</div>
+                            </div>
+                            <div class="product__btn">в корзину</div></a></div>
+                        <div class="galery__col"> <a class="product" href="">
+                            <div class="product__img"> <img src="./assets/imgs/ring5.png" alt="product"></div>
+                            <div class="product__price">20 450 ₽</div>
+                            <div class="product__old-price">36 450 ₽
+                              <div class="product__rating">
+                                <div class="rating__item"><img src="./assets/imgs/star1.svg" alt="">
+                                </div>
+                                <div class="rating__item"><img src="./assets/imgs/star1.svg" alt="">
+                                </div>
+                                <div class="rating__item"><img src="./assets/imgs/star1.svg" alt="">
+                                </div>
+                                <div class="rating__item"><img src="./assets/imgs/star1.svg" alt="">
+                                </div>
+                                <div class="rating__item"><img src="./assets/imgs/star1.svg" alt="">
+                                </div>
+                              </div>
+                            </div>
+                            <div class="product__text">Помолвочное кольцо из белого золота с бриллиантом
+                              <div class="product__text_h">Белое золото, 585° Вставки: бриллианты Вес: 0,94 г</div>
+                            </div>
+                            <div class="product__btn">в корзину</div></a></div>
+                        <div class="galery__col"> <a class="product" href="">
+                            <div class="product__img"> <img src="./assets/imgs/ring6.png" alt="product"></div>
+                            <div class="product__price">18 750 ₽</div>
+                            <div class="product__old-price">27 000 ₽
+                              <div class="product__rating">
+                                <div class="rating__item"><img src="./assets/imgs/star1.svg" alt="">
+                                </div>
+                                <div class="rating__item"><img src="./assets/imgs/star1.svg" alt="">
+                                </div>
+                                <div class="rating__item"><img src="./assets/imgs/star1.svg" alt="">
+                                </div>
+                                <div class="rating__item"><img src="./assets/imgs/star1.svg" alt="">
+                                </div>
+                                <div class="rating__item"><img src="./assets/imgs/star1.svg" alt="">
+                                </div>
+                              </div>
+                            </div>
+                            <div class="product__text">Кольцо из белого золота 585 пробы с бриллиантами
+                              <div class="product__text_h">Белое золото, 585° Вставки: бриллианты Вес: 1,85 г</div>
+                            </div>
+                            <div class="product__btn">в корзину</div></a></div>
+                        <div class="galery__col"> <a class="product" href="">
+                            <div class="product__img"> <img src="./assets/imgs/ring5.png" alt="product"></div>
+                            <div class="product__price">20 450 ₽</div>
+                            <div class="product__old-price">36 450 ₽
+                              <div class="product__rating">
+                                <div class="rating__item"><img src="./assets/imgs/star1.svg" alt="">
+                                </div>
+                                <div class="rating__item"><img src="./assets/imgs/star1.svg" alt="">
+                                </div>
+                                <div class="rating__item"><img src="./assets/imgs/star1.svg" alt="">
+                                </div>
+                                <div class="rating__item"><img src="./assets/imgs/star1.svg" alt="">
+                                </div>
+                                <div class="rating__item"><img src="./assets/imgs/star1.svg" alt="">
+                                </div>
+                              </div>
+                            </div>
+                            <div class="product__text">Помолвочное кольцо из белого золота с бриллиантом
+                              <div class="product__text_h">Белое золото, 585° Вставки: бриллианты Вес: 0,94 г</div>
+                            </div>
+                            <div class="product__btn">в корзину</div></a></div>
+                        <div class="galery__col"> <a class="product" href="">
+                            <div class="product__img"> <img src="./assets/imgs/ring8.png" alt="product"></div>
+                            <div class="product__price">10 250 ₽</div>
+                            <div class="product__old-price"> 
+                              <div class="product__rating">
+                                <div class="rating__item"><img src="./assets/imgs/star1.svg" alt="">
+                                </div>
+                                <div class="rating__item"><img src="./assets/imgs/star1.svg" alt="">
+                                </div>
+                                <div class="rating__item"><img src="./assets/imgs/star1.svg" alt="">
+                                </div>
+                                <div class="rating__item"><img src="./assets/imgs/star1.svg" alt="">
+                                </div>
+                                <div class="rating__item"><img src="./assets/imgs/star0.svg" alt="">
+                                </div>
+                              </div>
+                            </div>
+                            <div class="product__text">Кольцо из комбинированного золота с бриллиантами
+                              <div class="product__text_h">Желтое золото, 585° Вставки: бриллианты Вес: 2,27 г</div>
+                            </div>
+                            <div class="product__btn">в корзину</div></a></div>
+                        <div class="galery__col"> <a class="product" href="">
+                            <div class="product__img"> <img src="./assets/imgs/ring7.png" alt="product"></div>
+                            <div class="product__price">9 250 ₽</div>
+                            <div class="product__old-price">12 500 ₽
+                              <div class="product__rating">
+                                <div class="rating__item"><img src="./assets/imgs/star1.svg" alt="">
+                                </div>
+                                <div class="rating__item"><img src="./assets/imgs/star1.svg" alt="">
+                                </div>
+                                <div class="rating__item"><img src="./assets/imgs/star1.svg" alt="">
+                                </div>
+                                <div class="rating__item"><img src="./assets/imgs/star0.svg" alt="">
+                                </div>
+                                <div class="rating__item"><img src="./assets/imgs/star0.svg" alt="">
+                                </div>
+                              </div>
+                            </div>
+                            <div class="product__text">Кольцо из золота с родированием с бриллиантом
+                              <div class="product__text_h">Желтое золото, 585° Вставки: бриллианты Вес: 2,31 г</div>
+                            </div>
+                            <div class="product__btn">в корзину</div></a></div>
+          </div>
+        </div>
+      </div>
+      <div class="catalog__baner">
+        <div class="catalog__baner-container">
+          <div class="catalog__baner-title">зимние новинки 2020</div>
+          <div class="catalog__baner-subtitle">время скидок</div><a class="catalog__baner-link" href="winter-ring.html">Смотреть новинки</a>
+        </div>
+      </div>
+      <div class="catalog__galery container">
+                <div class="galery__col"> <a class="product" href="">
+                    <div class="product__img"> <img src="./assets/imgs/ring5.png" alt="product"></div>
+                    <div class="product__price">20 450 ₽</div>
+                    <div class="product__old-price">36 450 ₽
+                      <div class="product__rating">
+                        <div class="rating__item"><img src="./assets/imgs/star1.svg" alt="">
+                        </div>
+                        <div class="rating__item"><img src="./assets/imgs/star1.svg" alt="">
+                        </div>
+                        <div class="rating__item"><img src="./assets/imgs/star1.svg" alt="">
+                        </div>
+                        <div class="rating__item"><img src="./assets/imgs/star1.svg" alt="">
+                        </div>
+                        <div class="rating__item"><img src="./assets/imgs/star1.svg" alt="">
+                        </div>
+                      </div>
+                    </div>
+                    <div class="product__text">Помолвочное кольцо из белого золота с бриллиантом
+                      <div class="product__text_h">Белое золото, 585° Вставки: бриллианты Вес: 0,94 г</div>
+                    </div>
+                    <div class="product__btn">в корзину</div></a></div>
+                <div class="galery__col"> <a class="product" href="">
+                    <div class="product__img"> <img src="./assets/imgs/ring6.png" alt="product"></div>
+                    <div class="product__price">18 750 ₽</div>
+                    <div class="product__old-price">27 000 ₽
+                      <div class="product__rating">
+                        <div class="rating__item"><img src="./assets/imgs/star1.svg" alt="">
+                        </div>
+                        <div class="rating__item"><img src="./assets/imgs/star1.svg" alt="">
+                        </div>
+                        <div class="rating__item"><img src="./assets/imgs/star1.svg" alt="">
+                        </div>
+                        <div class="rating__item"><img src="./assets/imgs/star1.svg" alt="">
+                        </div>
+                        <div class="rating__item"><img src="./assets/imgs/star1.svg" alt="">
+                        </div>
+                      </div>
+                    </div>
+                    <div class="product__text">Кольцо из белого золота 585 пробы с бриллиантами
+                      <div class="product__text_h">Белое золото, 585° Вставки: бриллианты Вес: 1,85 г</div>
+                    </div>
+                    <div class="product__btn">в корзину</div></a></div>
+                <div class="galery__col"> <a class="product" href="">
+                    <div class="product__img"> <img src="./assets/imgs/ring7.png" alt="product"></div>
+                    <div class="product__price">9 250 ₽</div>
+                    <div class="product__old-price">12 500 ₽
+                      <div class="product__rating">
+                        <div class="rating__item"><img src="./assets/imgs/star1.svg" alt="">
+                        </div>
+                        <div class="rating__item"><img src="./assets/imgs/star1.svg" alt="">
+                        </div>
+                        <div class="rating__item"><img src="./assets/imgs/star1.svg" alt="">
+                        </div>
+                        <div class="rating__item"><img src="./assets/imgs/star0.svg" alt="">
+                        </div>
+                        <div class="rating__item"><img src="./assets/imgs/star0.svg" alt="">
+                        </div>
+                      </div>
+                    </div>
+                    <div class="product__text">Кольцо из золота с родированием с бриллиантом
+                      <div class="product__text_h">Желтое золото, 585° Вставки: бриллианты Вес: 2,31 г</div>
+                    </div>
+                    <div class="product__btn">в корзину</div></a></div>
+                <div class="galery__col"> <a class="product" href="">
+                    <div class="product__img"> <img src="./assets/imgs/ring8.png" alt="product"></div>
+                    <div class="product__price">10 250 ₽</div>
+                    <div class="product__old-price"> 
+                      <div class="product__rating">
+                        <div class="rating__item"><img src="./assets/imgs/star1.svg" alt="">
+                        </div>
+                        <div class="rating__item"><img src="./assets/imgs/star1.svg" alt="">
+                        </div>
+                        <div class="rating__item"><img src="./assets/imgs/star1.svg" alt="">
+                        </div>
+                        <div class="rating__item"><img src="./assets/imgs/star1.svg" alt="">
+                        </div>
+                        <div class="rating__item"><img src="./assets/imgs/star0.svg" alt="">
+                        </div>
+                      </div>
+                    </div>
+                    <div class="product__text">Кольцо из комбинированного золота с бриллиантами
+                      <div class="product__text_h">Желтое золото, 585° Вставки: бриллианты Вес: 2,27 г</div>
+                    </div>
+                    <div class="product__btn">в корзину</div></a></div>
+                <div class="galery__col"> <a class="product" href="">
+                    <div class="product__img"> <img src="./assets/imgs/ring7.png" alt="product"></div>
+                    <div class="product__price">9 250 ₽</div>
+                    <div class="product__old-price">12 500 ₽
+                      <div class="product__rating">
+                        <div class="rating__item"><img src="./assets/imgs/star1.svg" alt="">
+                        </div>
+                        <div class="rating__item"><img src="./assets/imgs/star1.svg" alt="">
+                        </div>
+                        <div class="rating__item"><img src="./assets/imgs/star1.svg" alt="">
+                        </div>
+                        <div class="rating__item"><img src="./assets/imgs/star0.svg" alt="">
+                        </div>
+                        <div class="rating__item"><img src="./assets/imgs/star0.svg" alt="">
+                        </div>
+                      </div>
+                    </div>
+                    <div class="product__text">Кольцо из золота с родированием с бриллиантом
+                      <div class="product__text_h">Желтое золото, 585° Вставки: бриллианты Вес: 2,31 г</div>
+                    </div>
+                    <div class="product__btn">в корзину</div></a></div>
+                <div class="galery__col"> <a class="product" href="">
+                    <div class="product__img"> <img src="./assets/imgs/ring5.png" alt="product"></div>
+                    <div class="product__price">20 450 ₽</div>
+                    <div class="product__old-price">36 450 ₽
+                      <div class="product__rating">
+                        <div class="rating__item"><img src="./assets/imgs/star1.svg" alt="">
+                        </div>
+                        <div class="rating__item"><img src="./assets/imgs/star1.svg" alt="">
+                        </div>
+                        <div class="rating__item"><img src="./assets/imgs/star1.svg" alt="">
+                        </div>
+                        <div class="rating__item"><img src="./assets/imgs/star1.svg" alt="">
+                        </div>
+                        <div class="rating__item"><img src="./assets/imgs/star1.svg" alt="">
+                        </div>
+                      </div>
+                    </div>
+                    <div class="product__text">Помолвочное кольцо из белого золота с бриллиантом
+                      <div class="product__text_h">Белое золото, 585° Вставки: бриллианты Вес: 0,94 г</div>
+                    </div>
+                    <div class="product__btn">в корзину</div></a></div>
+                <div class="galery__col"> <a class="product" href="">
+                    <div class="product__img"> <img src="./assets/imgs/ring8.png" alt="product"></div>
+                    <div class="product__price">10 250 ₽</div>
+                    <div class="product__old-price"> 
+                      <div class="product__rating">
+                        <div class="rating__item"><img src="./assets/imgs/star1.svg" alt="">
+                        </div>
+                        <div class="rating__item"><img src="./assets/imgs/star1.svg" alt="">
+                        </div>
+                        <div class="rating__item"><img src="./assets/imgs/star1.svg" alt="">
+                        </div>
+                        <div class="rating__item"><img src="./assets/imgs/star1.svg" alt="">
+                        </div>
+                        <div class="rating__item"><img src="./assets/imgs/star0.svg" alt="">
+                        </div>
+                      </div>
+                    </div>
+                    <div class="product__text">Кольцо из комбинированного золота с бриллиантами
+                      <div class="product__text_h">Желтое золото, 585° Вставки: бриллианты Вес: 2,27 г</div>
+                    </div>
+                    <div class="product__btn">в корзину</div></a></div>
+                <div class="galery__col"> <a class="product" href="">
+                    <div class="product__img"> <img src="./assets/imgs/ring6.png" alt="product"></div>
+                    <div class="product__price">18 750 ₽</div>
+                    <div class="product__old-price">27 000 ₽
+                      <div class="product__rating">
+                        <div class="rating__item"><img src="./assets/imgs/star1.svg" alt="">
+                        </div>
+                        <div class="rating__item"><img src="./assets/imgs/star1.svg" alt="">
+                        </div>
+                        <div class="rating__item"><img src="./assets/imgs/star1.svg" alt="">
+                        </div>
+                        <div class="rating__item"><img src="./assets/imgs/star1.svg" alt="">
+                        </div>
+                        <div class="rating__item"><img src="./assets/imgs/star1.svg" alt="">
+                        </div>
+                      </div>
+                    </div>
+                    <div class="product__text">Кольцо из белого золота 585 пробы с бриллиантами
+                      <div class="product__text_h">Белое золото, 585° Вставки: бриллианты Вес: 1,85 г</div>
+                    </div>
+                    <div class="product__btn">в корзину</div></a></div>
+      </div>
+      <div class="catalog__pagination"> <a href="#">1</a><a href="#">2</a><a href="#">3</a><a href="#">4</a><a href="#">5</a><a class="catalog__pagination-rect" href="#"><img src="assets/imgs/vector-slide.svg" alt=""></a></div>
+    </div>
+    <footer class="footer"> 
+      <div class="container footer__container"> 
+        <div class="footer__left">
+          <div class="footer__left-top"><a class="footer__logo" href="index.html"> <img src="assets/imgs/f_logo.svg" alt=""></a>
+            <div class="footer__left-nav"><a class="footer__left-nav--item" href="about-us.html">О компании</a><a class="footer__left-nav--item" href="catalog.html">Ювелирный каталог</a><a class="footer__left-nav--item" href="delivery.html">Доставка и оплата</a><a class="footer__left-nav--item" href="news.html">Новости</a><a class="footer__left-nav--item" href="contact.html">Контакты</a></div>
+          </div>
+          <div class="footer__left-bottom">© 2021 ДЕМЕТРА-САПФАЕРР</div>
+        </div>
+        <div class="footer__center">
+          <div class="footer__center-col"> <a class="footer__center-item" href="#">Кольца</a><a class="footer__center-item" href="#">Серьги</a><a class="footer__center-item" href="#">Подвески</a></div>
+          <div class="footer__center-col"> <a class="footer__center-item" href="#">Золото</a><a class="footer__center-item" href="#">Серебро</a><a class="footer__center-item" href="#">Бриллианты</a><a class="footer__center-item" href="#">Коллекции</a><a class="footer__center-item" href="#">Подарки</a></div>
+          <div class="footer__center-col"> <a class="footer__center-item" href="#">Камни</a></div>
+        </div>
+        <div class="footer__right"> 
+          <div class="footer__right-title">Контакты</div>
+          <div class="footer__right-address">г. Москва, БЦ «Синица Плаза» 2-я ул. Синичкина, 9 а, стр. 7 тел.: +7 499 372-60-84</div><a href="tel%+74993914579"> 
+            <div class="footer__right-link"> <img src="assets/imgs/f_whatsapp.svg" alt="">
+              <div class="footer__right-text">+7 499 391 45 79</div>
+            </div></a><a href="https://www.instagram.com/demetra_sapphire_jewelry/" target="blank"> 
+            <div class="footer__right-link"> <img src="assets/imgs/f_instagram.svg" alt="">
+              <div class="footer__right-text">Инстаграм</div>
+            </div></a><a class="footer__right-contact-us" href="#">Написать нам</a>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
