@@ -1,4 +1,4 @@
-.catalog{
+.liked{
     height: 100%;
     &__container{
         display: flex;
@@ -20,6 +20,61 @@
         margin-top: 1.5rem;
         margin-bottom: 2rem;
     }
+    &__subtitle{
+        font-style: normal;
+        font-weight: 600;
+        font-size: 22px;
+        line-height: 27px;
+        color: #333333;
+        display: flex;
+        align-items: center;
+        & span{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: #EEE9E4;
+            width: 3.8rem;
+            height: 3.8rem;
+            border-radius: 50%;
+            margin-left: 0.6rem;
+            margin-right: 0.6rem;
+        }
+    }
+    &__nav{
+        display: flex;
+        width: 26.6rem;
+        justify-content: space-between;
+        margin-bottom: 5rem;
+        margin-top: 5rem;
+    }
+    &__nav-link{
+        font-style: normal;
+        font-weight: 400;
+        font-size: 1.8rem;
+        line-height: 2.2rem;
+        color: #A39385;
+        position: relative;
+        &::after{
+            content: "";
+            position: absolute;
+            bottom: -1.3rem;
+            left: 25%;
+            width: 3.4rem;
+            border: 2px solid #A39385;
+            opacity: 0;
+            transition: .3s linear;
+        }
+        &:hover{
+            font-weight: 500;
+            &::after{
+                opacity: 1;
+            }
+        }
+    }
+    &__block{
+        display: flex;
+        margin-bottom: 5.8rem;
+    }
 }
 
 .breadcrumb__text{
@@ -28,4 +83,126 @@
     font-size: 1.2rem;
     line-height: 1.5rem;  
     color: rgba(39, 32, 66, 0.5);
+}
+.slider__col{
+    width: 24rem;
+    height: 46rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 0.8rem; 
+    transition: 1s;
+    position: relative;
+    margin-left: 1.3rem;
+    &::after{
+        content: "";
+        position: absolute;
+        height: 2rem;
+        width: 2rem;
+        background-image: url(../imgs/heart.svg);
+        background-position: center;
+        background-repeat: no-repeat;
+        top: 1.5rem;
+        right: 1.5rem;
+        opacity: 0;
+    }
+    &:hover{
+        background: #EEE9E4;
+        // transition: .5s;
+        .product__btn{
+            opacity: 1;
+            transition: 1s;
+        }
+        .product__text_h{
+            opacity: 1;
+            z-index: 1;
+            color: initial;
+            transition: 1s;
+        }
+        .product__text{
+            color: transparent;
+            transition: .5s;
+        }
+        .product__rating{
+            opacity: 1;
+        }
+        .product__old-price{
+            color: transparent;
+            transition: .5s;
+        }
+        &::after{
+            opacity: 1;
+            transition: .5s;
+        }
+    }
+}
+.product{
+    padding: 4rem 2rem 3rem 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+    &__img{
+
+    }
+    &__price{
+        font-weight: 500;
+        font-size: 2.4rem;
+        line-height: 2.9rem;
+        text-align: center;
+
+    }
+    &__old-price{
+        width: 19rem;
+        font-weight: 600;
+        font-size: 1.6rem;
+        height: 2rem;
+        line-height: 2rem;
+        text-align: center;
+        text-decoration-line: line-through;
+        color: #B8A99C;
+        margin: 1rem 0;
+        position: relative;
+    }
+    &__rating{
+        display: flex;
+        width: 13rem;
+        height: 2.5rem;
+        justify-content: space-between;
+        position: absolute;
+        top: 0;
+        right: 3rem;
+        opacity: 0;
+    }
+    &__text{
+        font-size: 1.6rem;
+        line-height: 2rem;
+        text-align: center;
+        position: relative;
+        color: rgba(51, 51, 51, 0.7);
+    }
+    &__text_h{
+        position: absolute;
+        width: auto;
+        height: auto;
+        top: 0;
+        left: 0;
+        opacity: 0;
+    }
+    &__btn {
+        height: 4.2rem;
+        width: 100%;
+        background: #A39385;
+        border-radius: 4px;   
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: #FFFFFF;  
+        font-style: normal;
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 20px;
+        margin-top: auto;
+        opacity: 0;
+    }
 }
