@@ -1,4 +1,4 @@
-.catalog{
+.purchases{
     height: 100%;
     &__container{
         display: flex;
@@ -20,6 +20,201 @@
         margin-top: 1.5rem;
         margin-bottom: 2rem;
     }
+    &__main{
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+    }
+    &__subtitle{
+        font-style: normal;
+        font-weight: 600;
+        font-size: 22px;
+        line-height: 27px;
+        color: #333333;
+        display: flex;
+        align-items: center;
+        margin-bottom: 3.8rem;
+        & span{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: #EEE9E4;
+            width: 3.8rem;
+            height: 3.8rem;
+            border-radius: 50%;
+            margin-left: 0.6rem;
+            margin-right: 0.6rem;
+        }
+    }
+    &__card{
+        display: flex;
+        width: 43.5rem;
+        padding: 1.7rem 7.5rem 2rem 1.7rem;
+        margin-bottom: 1rem;
+        &:hover{
+            box-shadow: 0px 4px 25px #EEE9E4;
+            border-radius: 4px;
+        }
+    }
+    &__card-img{
+        height: 13rem;
+        width: 13rem;
+    }
+    &__discription{
+
+    }
+    &__text{
+        font-style: normal;
+        font-weight: 500;
+        font-size: 1.6rem;
+        line-height: 2rem;
+        color: rgba(51, 51, 51, 0.7);
+        margin-bottom: 1.8rem;
+    }
+    &__btn{
+        display: flex;
+    }
+    &__size{
+        font-style: normal;
+        font-weight: 600;
+        font-size: 1.4rem;
+        line-height: 1.7rem;
+        color: #272042;
+        padding: 0.7rem 1.3rem;
+        border: 2px solid rgba(238, 233, 228, 0.5);
+        border-radius: 4px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-right: 1rem;
+    }
+    &__quantity{
+        padding: 0.7rem 1.3rem;
+        border: 2px solid rgba(238, 233, 228, 0.5);
+        border-radius: 4px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    &__value{
+        font-style: normal;
+        font-weight: 600;
+        font-size: 1.4rem;
+        line-height: 1.7rem;
+        color: #272042;
+        margin-right: 1.2rem;
+        margin-left: 1.2rem;
+    }
+    &__price{
+        display: flex;
+        align-items: flex-end;
+        margin-top: 1.5rem;
+    }
+    &__price-now{
+        font-style: normal;
+        font-weight: 600;
+        font-size: 20px;
+        line-height: 24px;
+        color: #333333;
+        margin-right: 1.2rem;
+    }
+    &__price-old{
+        font-style: normal;
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 20px;
+        text-decoration-line: line-through;
+        color: #B8A99C;
+    }
+    &__total{
+        width: 43.5rem;
+        display: flex;
+        padding-top: 2rem;
+        border-top: 1px solid #B8A99C;
+        margin-bottom: 3rem;
+    }
+    &__var{
+        font-style: normal;
+        font-weight: 600;
+        font-size: 2.2rem;
+        line-height: 2.7rem;
+        color: #333333;
+    }
+    &__total-value{
+        font-style: normal;
+        font-weight: 600;
+        font-size: 2.2rem;
+        line-height: 2.7rem;
+        color: #333333;
+        margin-left: auto;
+    }
+    &__link{
+
+    }
+    &__link-top{
+        font-style: normal;
+        font-weight: normal;
+        font-size: 16px;
+        line-height: 25px;
+        color: #333333;
+    }
+    &__link-bottom{
+        font-style: normal;
+        font-weight: normal;
+        font-size: 16px;
+        line-height: 25px;
+        color: #A39385;
+        margin-bottom: 8.6rem;
+    }
+    &__input{
+        width: 53.2rem;
+        background: rgba(238, 233, 228, 0.25);
+        border-radius: 4px;
+        padding: 3rem 8rem 4.7rem 4.9rem;
+    }
+    &__input input{
+        border: 2px solid #EEE9E4;
+        box-sizing: border-box;
+        border-radius: 8px;
+        height: 4.5rem;
+        width: 100%;
+    }
+    &__input-title{
+        font-style: normal;
+        font-weight: 600;
+        font-size: 22px;
+        line-height: 27px;
+        color: #333333;
+        margin-bottom: 2rem;
+    }
+    &__input-name{
+        font-style: normal;
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 35px;
+        color: #333333;
+    }
+    &__input-btn{
+        width: 20rem;
+        height: 5rem;
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 20px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: #333333;
+        background: #FFFFFF;
+        box-shadow: 0px 4px 25px rgba(163, 147, 133, 0.15);
+        border-radius: 4px;
+        margin-top: 3rem;
+        transition: .2s linear;
+        &:hover{
+            background: #A39385;
+            border-radius: 4px;
+            color: white;
+        }
+    }
 }
 
 .breadcrumb__text{
@@ -28,4 +223,48 @@
     font-size: 1.2rem;
     line-height: 1.5rem;  
     color: rgba(39, 32, 66, 0.5);
+}
+
+.contacts{
+    &__connect{
+        margin-top: 5rem;
+        margin-left: 5rem;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 22px;
+        line-height: 27px;
+        color: #333333;
+    }
+    &__links{
+        display: flex;
+        flex-direction: column;
+        margin-top: 2rem;
+    }
+    &__tel{
+        display: flex;
+    }
+    &__link{
+        display: flex;
+        margin-bottom: 0.5rem;
+    }
+    &__num{
+        margin-left: 1rem;
+        white-space: nowrap;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 16px;
+        line-height: 36px;
+        color: #000000;
+        margin-right: 2rem;
+    }
+    &__text{
+        margin-left: 2rem;
+        white-space: nowrap;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 16px;
+        line-height: 36px;
+        color: #A39385;
+    }
+   
 }

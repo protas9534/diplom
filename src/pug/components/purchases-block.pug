@@ -1,7 +1,59 @@
-.catalog 
-    .container.catalog__container 
-        .catalog__top 
-            .catalog__breadcrumb 
+.purchases
+    .container.purchases__container 
+        .purchases__top 
+            .purchases__breadcrumb 
                 img(src="assets/imgs/diamond.svg", alt="")
                 .breadcrumb__text Ювелирные украшения  /  Корзина
-            .catalog__title Корзина
+            .purchases__title Корзина
+            .purchases__main
+                .purchases__left
+                    .purchases__subtitle В избранном  <span> 3 </span>  товара:
+                    mixin card(cimg, ctext, csize, cquantity, cprice, coldprice)
+                        a(href="").purchases__card 
+                            img(src=cimg, alt="").purchases__card-img
+                            .purchases__discription 
+                                .purchases__text=ctext
+                                .purchases__btn 
+                                    .purchases__size=csize 
+                                    .purchases__quantity
+                                        img(src="./assets/imgs/minus.svg", alt="")
+                                        .purchases__value=cquantity 
+                                        img(src="./assets/imgs/plus.svg", alt="")
+                                .purchases__price
+                                    .purchases__price-now=cprice
+                                    .purchases__price-old=coldprice
+                    +card('./assets/imgs/ring1.png','Помолвочное кольцо из белого золота с бриллиантом','18,5','15 шт.','20 450 ₽', '')
+                    +card('./assets/imgs/ring2.png','Кольцо из желтого золота 585 пробы с родированием с бриллиантом','17','255 шт.','9 250 ₽', '12 500')
+                    +card('./assets/imgs/ring3.png','Кольцо из белого золота 585 пробы','18,5','5 шт.','9 900 ₽', '')
+                    .purchases__total 
+                        .purchases__var Итого:
+                        .purchases__total-value 39 690 ₽
+                    a(href="").purchases__link
+                        .purchases__link-top Что-то забыли?
+                        .purchases__link-bottom Вернитесь в ювелирный каталог
+                .purchases__right 
+                    .purchases__input 
+                        .purchases__input-title Оформление заказа
+                        .purchases__input-name Имя:
+                        input(type="text")
+                        .purchases__input-name Телефон:
+                        input(type="tel")
+                        .purchases__input-name Почта:
+                        input(type="email")
+                        button.purchases__input-btn Оформить заказ
+                    .contacts__connect Связаться с нами
+                        .contacts__links
+                            .contacts__tel
+                                a(href="").contacts__link 
+                                    img(src="assets/imgs/phone.svg", alt="")
+                                    .contacts__num +7 499 472 60 84
+                                a(href="").contacts__link                        
+                                    img(src="assets/imgs/whatsapp.svg", alt="")
+                                    .contacts__num +7 499 391 45 79 
+                            a(href="").contacts__link                         
+                                img(src="assets/imgs/instagram.svg", alt="")
+                                .contacts__text @demetra_sapphire_jewelry
+                            a(href="").contacts__link                         
+                                img(src="assets/imgs/mail.svg", alt="")
+                                .contacts__text Написать нам
+

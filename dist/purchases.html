@@ -8,28 +8,99 @@
     <title>Document</title>
   </head>
   <body> 
-    <header class="header">
-      <div class="container header__container"> 
-        <div class="header__logo"><a class="logo" href="index.html"><img src="assets/imgs/logo.svg" alt="jewelry"></a></div>
-        <nav class="header__nav"> 
-          <ul class="nav__list">
-            <li class="nav__item"> <a class="nav__link about" href="about-us.html">О компании</a></li>
-            <li class="nav__item"> <a class="nav__link" href="catalog.html">Каталог</a></li>
-            <li class="nav__item"> <a class="nav__link" href="delivery.html">Доставка</a></li>
-            <li class="nav__item"> <a class="nav__link" href="news.html">Новости</a></li>
-            <li class="nav__item"> <a class="nav__link" href="contact.html">Контакты</a></li>
+    <header class="header-m">
+      <div class="container header-m__container"> 
+        <div class="header-m__logo"><a class="logo" href="index.html"><img src="assets/imgs/logo-m.svg" alt="jewelry"></a></div>
+        <nav class="header-m__nav"> 
+          <ul class="header-m__nav-list">
+            <li class="header-m__nav-item"> <a class="header-m__nav-link" href="about-us.html">О компании</a></li>
+            <li class="header-m__nav-item"> <a class="header-m__nav-link" href="catalog.html">Каталог</a></li>
+            <li class="header-m__nav-item"> <a class="header-m__nav-link" href="delivery.html">Доставка</a></li>
+            <li class="header-m__nav-item"> <a class="header-m__nav-link" href="news.html">Новости</a></li>
+            <li class="header-m__nav-item"><a class="header-m__nav-link" href="contact.html">Контакты</a></li>
           </ul>
         </nav>
-        <div class="header__icons"><a class="header__ico-link" href="liked.html"><img src="assets/imgs/like.svg" alt="like"></a><a class="header__ico-link" href="#"><img src="assets/imgs/search.svg" alt="search"></a><a class="header__ico-link" href="purchases.html"><img src="assets/imgs/cart.svg" alt="cart"></a></div>
+        <div class="header-m__icons"><a class="header-m__ico-link" href="liked.html"><img src="assets/imgs/like-m.svg" alt="like"></a><a class="header-m__ico-link" href="#"><img src="assets/imgs/search-m.svg" alt="search"></a><a class="header-m__ico-link" href="purchases.html"><img src="assets/imgs/cart-m.svg" alt="cart"></a></div>
       </div>
     </header>
-    <div class="catalog"> 
-      <div class="container catalog__container"> 
-        <div class="catalog__top"> 
-          <div class="catalog__breadcrumb"> <img src="assets/imgs/diamond.svg" alt="">
+    <div class="purchases">
+      <div class="container purchases__container"> 
+        <div class="purchases__top"> 
+          <div class="purchases__breadcrumb"> <img src="assets/imgs/diamond.svg" alt="">
             <div class="breadcrumb__text">Ювелирные украшения  /  Корзина</div>
           </div>
-          <div class="catalog__title">Корзина</div>
+          <div class="purchases__title">Корзина</div>
+          <div class="purchases__main">
+            <div class="purchases__left">
+              <div class="purchases__subtitle">В избранном  <span> 3 </span>  товара:</div><a class="purchases__card" href=""> <img class="purchases__card-img" src="./assets/imgs/ring1.png" alt="">
+                              <div class="purchases__discription"> 
+                                <div class="purchases__text">Помолвочное кольцо из белого золота с бриллиантом</div>
+                                <div class="purchases__btn"> 
+                                  <div class="purchases__size">18,5</div>
+                                  <div class="purchases__quantity"><img src="./assets/imgs/minus.svg" alt="">
+                                    <div class="purchases__value">15 шт.</div><img src="./assets/imgs/plus.svg" alt="">
+                                  </div>
+                                </div>
+                                <div class="purchases__price">
+                                  <div class="purchases__price-now">20 450 ₽</div>
+                                  <div class="purchases__price-old"></div>
+                                </div>
+                              </div></a><a class="purchases__card" href=""> <img class="purchases__card-img" src="./assets/imgs/ring2.png" alt="">
+                              <div class="purchases__discription"> 
+                                <div class="purchases__text">Кольцо из желтого золота 585 пробы с родированием с бриллиантом</div>
+                                <div class="purchases__btn"> 
+                                  <div class="purchases__size">17</div>
+                                  <div class="purchases__quantity"><img src="./assets/imgs/minus.svg" alt="">
+                                    <div class="purchases__value">255 шт.</div><img src="./assets/imgs/plus.svg" alt="">
+                                  </div>
+                                </div>
+                                <div class="purchases__price">
+                                  <div class="purchases__price-now">9 250 ₽</div>
+                                  <div class="purchases__price-old">12 500</div>
+                                </div>
+                              </div></a><a class="purchases__card" href=""> <img class="purchases__card-img" src="./assets/imgs/ring3.png" alt="">
+                              <div class="purchases__discription"> 
+                                <div class="purchases__text">Кольцо из белого золота 585 пробы</div>
+                                <div class="purchases__btn"> 
+                                  <div class="purchases__size">18,5</div>
+                                  <div class="purchases__quantity"><img src="./assets/imgs/minus.svg" alt="">
+                                    <div class="purchases__value">5 шт.</div><img src="./assets/imgs/plus.svg" alt="">
+                                  </div>
+                                </div>
+                                <div class="purchases__price">
+                                  <div class="purchases__price-now">9 900 ₽</div>
+                                  <div class="purchases__price-old"></div>
+                                </div>
+                              </div></a>
+              <div class="purchases__total"> 
+                <div class="purchases__var">Итого:</div>
+                <div class="purchases__total-value">39 690 ₽</div>
+              </div><a class="purchases__link" href="">
+                <div class="purchases__link-top">Что-то забыли?</div>
+                <div class="purchases__link-bottom">Вернитесь в ювелирный каталог</div></a>
+            </div>
+            <div class="purchases__right"> 
+              <div class="purchases__input"> 
+                <div class="purchases__input-title">Оформление заказа</div>
+                <div class="purchases__input-name">Имя:</div>
+                <input type="text">
+                <div class="purchases__input-name">Телефон:</div>
+                <input type="tel">
+                <div class="purchases__input-name">Почта:</div>
+                <input type="email">
+                <button class="purchases__input-btn">Оформить заказ</button>
+              </div>
+              <div class="contacts__connect">Связаться с нами
+                <div class="contacts__links">
+                  <div class="contacts__tel"><a class="contacts__link" href=""> <img src="assets/imgs/phone.svg" alt="">
+                      <div class="contacts__num">+7 499 472 60 84</div></a><a class="contacts__link" href="">                       <img src="assets/imgs/whatsapp.svg" alt="">
+                      <div class="contacts__num">+7 499 391 45 79 </div></a></div><a class="contacts__link" href="">                        <img src="assets/imgs/instagram.svg" alt="">
+                    <div class="contacts__text">@demetra_sapphire_jewelry</div></a><a class="contacts__link" href="">                        <img src="assets/imgs/mail.svg" alt="">
+                    <div class="contacts__text">Написать нам</div></a>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </div>

@@ -78,9 +78,10 @@
     }
     &__num{
         margin-left: 2rem;
-
+        white-space: nowrap;
     }
-    &__text{
+    &__text-link{
+        margin-left: 2rem;
         color: #A39385;
     }
    
