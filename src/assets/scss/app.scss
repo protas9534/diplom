@@ -29,3 +29,9 @@
 @import 'components/winter-ring-block.scss';
 @import 'components/purchases-block.scss';
 @import 'components/liked-block.scss';
+
+@media (max-width: 900px) {
+    .footer__container{
+        justify-content: space-around;
+    }
+}

@@ -29,6 +29,7 @@
         line-height: 2.2rem;
         letter-spacing: 1.5em;
         text-transform: uppercase;
+        text-align: center;
     }
     &__link{
         display: flex;
@@ -48,5 +49,15 @@
         line-height: 2rem;
         color: #EEE9E4;
         padding-bottom: 1.6rem;
+    }
+}
+@media (max-width: 375px) {
+    .main__title{
+        font-weight: 300;
+        font-size: 4rem;
+        line-height: 7rem;
+    }
+    .main__subtitle{
+        line-height: 3rem;
     }
 }

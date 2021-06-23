@@ -23,11 +23,12 @@
     }
     &__filter{
         display: flex;
+        flex-wrap: wrap;
     }
     &__filter-item{
         display: flex;
         flex-direction: column;
-        width: 17.5rem;
+        max-width: 17.5rem;
         padding-top: 1.5rem;
         padding-bottom: 2rem;
         padding-left: 3rem;
@@ -236,6 +237,7 @@
         color: #333333;
         padding-left: 3.5rem;
         position: relative;
+        white-space: nowrap;
         &::before{
             content: "";
             display: block;
@@ -392,5 +394,69 @@
         line-height: 20px;
         margin-top: auto;
         opacity: 0;
+    }
+}
+@media (max-width: 1060px) {
+    .catalog__baner-container{
+        &::before{
+            left: -3rem;
+        }
+        &::after{
+            right: 3rem;
+        }
+    }
+}
+@media (max-width: 980px) {
+    .catalog__baner-container{
+        &::before{
+            display: none;
+        }
+    }
+    .catalog__galery{
+        justify-content: space-around;
+    }
+    .catalog__filter{
+        justify-content: space-between;
+        padding-right: 4rem;
+    }
+}
+@media (max-width: 700px) {
+    .catalog__filter{
+        justify-content: flex-start;
+    }
+}
+@media (max-width: 550px) {
+    .catalog__filter{
+        justify-content: space-around;
+    }
+    .catalog__sort{
+        display: flex;
+        flex-direction: column;
+        white-space: nowrap;
+    }
+    .catalog__baner-title {
+        width: 90%;
+    }
+    .catalog__baner-subtitle{
+        line-height: 3rem;
+    }
+}
+@media (max-width: 550px) {
+    .catalog__baner-container{
+        &::after{
+            display: none;
+        }
+    }
+}
+@media (max-width: 370px) {
+    .radio{
+        display: none;
+    }
+    .catalog__filter-item {
+        padding: 0.3rem 0;
+        padding-left: 1.7rem;
+    }
+    .catalog__filter{
+        justify-content: flex-start;
     }
 }

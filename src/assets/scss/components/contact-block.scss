@@ -8,6 +8,8 @@
     &__top{
         display: flex;
         flex-direction: column;
+        position: relative;
+        z-index: 1;
     }
     &__breadcrumb{
         display: flex;
@@ -33,7 +35,9 @@
         font-weight: normal;
         font-size: 16px;
         line-height: 22px;
-        width: 46rem;
+        max-width: 46rem;
+        position: relative;
+        z-index: 1;
     }
     &__name{
         margin-bottom: 3rem;
@@ -92,4 +96,35 @@
     font-size: 12px;
     line-height: 15px;  
     color: rgba(39, 32, 66, 0.5);
+}
+
+
+@media (max-width: 1000px) {
+    .contact__breadcrumb {
+        display: none;
+    }
+    .contact__title {
+        margin-top: 10rem;
+    }
+    .contact__connect{
+        margin-top: 13rem;
+    }
+    .contact__img{
+        width: 100%;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    .contact__img img{
+        display: none;
+    }
+}
+@media (max-width: 600px) {
+    .contact__img img{
+        display: block;
+    }
+}
+@media (max-width: 350px) {
+    .contact__img img{
+        display: none;
+    }
 }

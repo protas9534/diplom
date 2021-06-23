@@ -32,6 +32,9 @@
     &__left-nav--item{
         color: white;
         display: block;
+        &:hover{
+            color: #B8A99C;
+        }
     }
     &__left-bottom{
         margin-top: auto;
@@ -53,6 +56,9 @@
     &__center-item{
         color: #EEE9E4;
         display: block;
+        &:hover{
+            color: #B8A99C;
+        }
     }
     &__right{
         display: flex;
@@ -88,5 +94,26 @@
         line-height: 17px;
         color: #B8A99C;
         margin-top: auto;
+    }
+}
+
+
+@media (max-width: 900px) {
+    .footer__center{
+        display: none;
+    }
+}
+@media (max-width: 530px) {
+    .footer__right {
+        display: none;
+    }
+    .footer__left-top{
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    .footer__logo{
+        margin-right: 0;
+        margin-bottom: 1rem;
     }
 }

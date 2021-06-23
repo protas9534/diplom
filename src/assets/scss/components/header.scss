@@ -37,6 +37,25 @@
             background: #A39385;
         }
     }
+    &__burger{
+        display: flex;
+        flex-direction: column;
+        height: 2rem;
+        justify-content: space-between;
+        display: none;
+    }
+    &__burger-top{
+        width: 3rem;
+        border: 2px solid #EEE9E4;
+    }
+    &__burger-center{
+        width: 3rem;
+        border: 2px solid #EEE9E4;
+    }
+    &__burger-bottom{
+        width: 3rem;
+        border: 2px solid #EEE9E4;
+    }
 }
 
 .nav__list {
@@ -59,5 +78,22 @@
     }
     &:focus{
         background: #A39385;
+    }
+}
+
+
+@media (max-width: 900px) {
+    .header__nav{
+        display: none;
+    }
+    .header__burger{
+        display: flex;
+        margin-left: auto;
+        padding-right: 2rem;
+    }
+}
+@media (max-width: 450px) {
+    .header__icons{
+        display: none;
     }
 }

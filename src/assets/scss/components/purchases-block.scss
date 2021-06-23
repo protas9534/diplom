@@ -268,3 +268,48 @@
     }
    
 }
+
+
+@media (max-width: 1000px) {
+    .purchases__main{
+        flex-direction: column;
+    }
+    .purchases__container{
+        align-items: center;
+    }
+    .purchases__card {
+        padding: 2rem;
+        width: 70%;
+    }
+    .purchases__left {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .purchases__right {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        // padding-bottom: 5rem;
+    }
+    .purchases__input {
+        padding: 3%;
+        width: 90%;
+    }
+    .purchases__total {
+        padding: 3%;
+        width: 90%;
+    }
+}
+@media (max-width: 1000px) {
+    .purchases__card{
+        flex-direction: column;
+        align-items: center;
+    }
+    .contacts__connect{
+        margin: 5rem 0;
+    }
+    .contacts__tel{
+        flex-direction: column;
+    }
+}

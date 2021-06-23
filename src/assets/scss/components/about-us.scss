@@ -7,10 +7,10 @@
     &__top{
         display: flex;
         flex-direction: column;
+        margin-top: 15.5rem;
     }
     &__breadcrumb{
         display: flex;
-        margin-top: 15.5rem;
     }
     &__title{
         font-size: 32px;
@@ -39,12 +39,14 @@
         font-size: 16px;
         line-height: 22px;
     }
-    &__img{
+    &__img-block{
         position: relative;
+    }
+    &__img{
         margin-left: auto;
         position: absolute;
-        right: 0;
-        top: 28rem;
+        left: 12rem;
+        top: 0;
     }
    
 }
@@ -54,4 +56,81 @@
     font-size: 12px;
     line-height: 15px;  
     color: rgba(39, 32, 66, 0.5);
+}
+
+
+@media (max-width: 1439px) {
+    .about-us__bottom{
+        flex-direction: column;
+        width: 100%;
+        align-items: center;
+        margin-bottom: 10rem;
+    }
+    .about-us__img-block{
+        position: static;
+    }
+    .about-us__img{
+        position: static;
+        margin-left: 0;
+    }
+    .about-us__text{
+        text-align: justify;
+        width: auto;
+    }
+    .about-us__text p:last-child{
+        text-align: center;
+        margin-bottom: 5rem;
+    }
+}
+@media (max-width: 1040px) {
+    .about-us__text{
+        padding: 0 5rem;
+    }
+    .about-us__top{
+        padding: 0 5rem;
+    }
+}
+
+@media (max-width: 680px) {
+    .about-us__img{
+        width: 95%;
+    }
+    .about-us__img-block{
+        display: flex;
+        justify-content: center;
+    }
+    .about-us__bottom{
+        margin-bottom: 5rem;
+    }
+}
+@media (max-width: 500px) {
+    .about-us__top{
+        align-items: center;
+        margin-top: 10rem;
+    }
+    .about-us__breadcrumb {
+        display: none;
+    }
+    .about-us__text{
+        font-size: 12px;
+        line-height: 15px; 
+        padding: 0 2rem;
+    }
+    .about-us__text span{
+        font-size: 12px;
+        line-height: 15px; 
+    }
+    .about-us__title{
+        font-size: 20px;
+        line-height: 23px;
+    }
+}
+
+@media (max-width: 350px) {
+    .about-us__text{
+        font-size: 11px;
+    }
+    .about-us__text span{
+        font-size: 11px;
+    }
 }
