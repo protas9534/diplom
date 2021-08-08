@@ -13,10 +13,10 @@
         display: flex;
     }
     &__title{
-        font-size: 32px;
-        line-height: 39px;
+        font-size: 3.2rem;
+        line-height: 3.9rem;
         color: #272042;
-        margin-top: 15px;
+        margin-top: 1.5rem;
     }
     &__rect{
         width: 3.4rem;
@@ -30,14 +30,14 @@
     }
     &__text{
         font-weight: normal;
-        font-size: 16px;
-        line-height: 22px;
+        font-size: 1.6rem;
+        line-height: 2.2rem;
         width: 46rem;
     }
     &__text span{
         font-weight: 700;
-        font-size: 16px;
-        line-height: 22px;
+        font-size: 1.6rem;
+        line-height: 2.2rem;
     }
     &__img-block{
         position: relative;
@@ -53,8 +53,8 @@
 .breadcrumb__text{
     margin-left: 0.6rem;
     font-weight: normal;
-    font-size: 12px;
-    line-height: 15px;  
+    font-size: 1.2rem;
+    line-height: 1.5rem;  
     color: rgba(39, 32, 66, 0.5);
 }
 
@@ -112,8 +112,8 @@
         display: none;
     }
     .about-us__text{
-        font-size: 12px;
-        line-height: 15px; 
+        font-size: 1.2rem;
+        line-height: 1.5rem; 
         padding: 0 2rem;
     }
     .about-us__text span{
@@ -121,16 +121,16 @@
         line-height: 15px; 
     }
     .about-us__title{
-        font-size: 20px;
-        line-height: 23px;
+        font-size: 1.2rem;
+        line-height: 1.5rem; 
     }
 }
 
 @media (max-width: 350px) {
     .about-us__text{
-        font-size: 11px;
+        font-size: 1.1rem;
     }
     .about-us__text span{
-        font-size: 11px;
+        font-size: 1.1rem;
     }
 }

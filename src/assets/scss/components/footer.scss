@@ -26,8 +26,8 @@
     }
     &__left-nav{
         font-weight: 500;
-        font-size: 14px;
-        line-height: 30px;
+        font-size: 1.4rem;
+        line-height: 3rem;
     }
     &__left-nav--item{
         color: white;
@@ -39,15 +39,15 @@
     &__left-bottom{
         margin-top: auto;
         font-weight: normal;
-        font-size: 12px;
-        line-height: 15px;
+        font-size: 1.2rem;
+        line-height: 1.5rem;
         color: rgba(255, 255, 255, 0.2);
     }
     &__center{
         display: flex;
         font-weight: 500;
-        font-size: 14px;
-        line-height: 30px;
+        font-size: 1.4rem;
+        line-height: 3rem;
     }
     &__center-col{
         width: 12.4rem;
@@ -66,15 +66,15 @@
     }
     &__right-title{
         font-weight: 500;
-        font-size: 18px;
-        line-height: 22px;
+        font-size: 1.8rem;
+        line-height: 2.2rem;
         margin-bottom: 1rem;
     }
     &__right-address{
         font-weight: normal;
-        font-size: 14px;
-        line-height: 30px;
-        width: 218px;
+        font-size: 1.4rem;
+        line-height: 3rem;
+        width: 21.8rem;
         margin-bottom: 3rem;
     }
     &__right-link{
@@ -83,15 +83,15 @@
     }
     &__right-text {
         font-weight: 600;
-        font-size: 16px;
-        line-height: 30px;
+        font-size: 1.6rem;
+        line-height: 3rem;
         color: #B8A99C;
         margin-left: 1rem;
     }
     &__right-contact-us{
         font-weight: normal;
-        font-size: 14px;
-        line-height: 17px;
+        font-size: 1.4rem;
+        line-height: 1.7rem;
         color: #B8A99C;
         margin-top: auto;
     }

@@ -12,10 +12,10 @@
         margin-top: 15.5rem;
     }
     &__title{
-        font-size: 32px;
-        line-height: 39px;
+        font-size: 3.2rem;
+        line-height: 3.9rem;
         color: #272042;
-        margin-top: 15px;
+        margin-top: 1.5rem;
     }
     &__rect{
         width: 3.4rem;
@@ -29,14 +29,14 @@
     }
     &__text{
         font-weight: normal;
-        font-size: 16px;
-        line-height: 22px;
+        font-size: 1.6rem;
+        line-height: 2.2rem;
         width: 46rem;
     }
     &__text span{
         font-weight: 700;
-        font-size: 16px;
-        line-height: 22px;
+        font-size: 1.6rem;
+        line-height: 2.2rem;
     }
     &__img{
         margin-top: 4rem;
@@ -47,8 +47,8 @@
 .breadcrumb__text{
     margin-left: 0.6rem;
     font-weight: normal;
-    font-size: 12px;
-    line-height: 15px;  
+    font-size: 1.2rem;
+    line-height: 1.5rem;  
     color: rgba(39, 32, 66, 0.5);
 }
 
@@ -63,16 +63,16 @@
 }
 @media (max-width: 750px) {
     .delivery__title{
-        font-size: 20px;
-        line-height: 22px;
+        font-size: 2rem;
+        line-height: 2.2rem;
     }
     .delivery__text {
-        font-size: 12px;
-        line-height: 20px;
+        font-size: 1.2rem;
+        line-height: 2rem;
     }
     .delivery__text span{
-        font-size: 12px;
-        line-height: 20px;
+        font-size: 1.2rem;
+        line-height: 2rem;
     }
     .delivery__bottom{
         padding-top: 1rem;

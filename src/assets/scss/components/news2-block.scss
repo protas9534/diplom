@@ -15,10 +15,10 @@
         margin-top: 15.5rem;
     }
     &__title{
-        font-size: 32px;
-        line-height: 39px;
+        font-size: 3.2rem;
+        line-height: 3.9rem;
         color: #272042;
-        margin-top: 15px;
+        margin-top: 1.5rem;
     }
     &__rect{
         width: 3.4rem;
@@ -37,14 +37,14 @@
     }
     &__first{
         font-weight: normal;
-        font-size: 18px;
-        line-height: 22px;
+        font-size: 1.8rem;
+        line-height: 2.2rem;
         color: #A39385;
     }
     &__second{
         font-weight: 500;
-        font-size: 18px;
-        line-height: 22px;
+        font-size: 1.8rem;
+        line-height: 2.2rem;
         color: #A39385;
         margin-left: 3rem;
         position: relative;
@@ -98,15 +98,15 @@
     }
     &__card-title{
         font-weight: bold;
-        font-size: 16px;
-        line-height: 20px;
+        font-size: 1.6rem;
+        line-height: 2rem;
         margin-top: 1.5rem;
         margin-bottom: 1.7rem;
     }
     &__card-button{
         font-weight: normal;
-        font-size: 13px;
-        line-height: 16px;
+        font-size: 1.3rem;
+        line-height: 1.6rem;
         color: #A39385;
         position: relative;
         display: flex;
@@ -131,8 +131,8 @@
     &__pagination a {
         margin-right: 1.5rem;
         font-weight: 500;
-        font-size: 16px;
-        line-height: 20px;
+        font-size: 1.6rem;
+        line-height: 2rem;
         text-align: center;
         letter-spacing: 0.5em;
         color: #B8A99C;
@@ -157,7 +157,7 @@
 .breadcrumb__text{
     margin-left: 0.6rem;
     font-weight: normal;
-    font-size: 12px;
-    line-height: 15px;  
+    font-size: 1.2rem;
+    line-height: 1.5rem;  
     color: rgba(39, 32, 66, 0.5);
 }

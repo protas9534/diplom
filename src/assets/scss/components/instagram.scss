@@ -7,8 +7,8 @@
     }
     &__title{
         font-weight: normal;
-        font-size: 32px;
-        line-height: 39px;
+        font-size: 3.2rem;
+        line-height: 3.9rem;
         margin-top: 10.8rem;
         margin-bottom: 2.5rem;
     }
@@ -28,18 +28,18 @@
     }
     &__info span {
         font-weight: bold;
-        font-size: 16px;
-        line-height: 20px;
+        font-size: 1.6rem;
+        line-height: 2rem;
     }
     &__info_text{
         font-weight: 400;
-        font-size: 16px;
-        line-height: 20px;
+        font-size: 1.6rem;
+        line-height: 2rem;
     }
     &__galery{
         display: grid;
         grid-template-columns: repeat(3,1fr);
-        grid-gap: 5px;
+        grid-gap: 0.5rem;
     }
     &__btn{
         width: 24.7rem;
@@ -51,8 +51,8 @@
         align-items: center;
         color: #FFFFFF;
         font-weight: 600;
-        font-size: 16px;
-        line-height: 20px;
+        font-size: 1.6rem;
+        line-height: 2rem;
         margin-top: 4.7rem;
         margin-bottom: 11.4rem;
         position: relative;
@@ -96,9 +96,7 @@
 }
 @media (max-width: 700px) {
     .inst__galery{
-        display: grid;
         grid-template-columns: repeat(1,1fr);
-        grid-gap: 5px;
     }
     .inst__foto:nth-child(n+4){
         display: none;

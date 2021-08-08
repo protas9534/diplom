@@ -173,5 +173,43 @@
         </div>
       </div>
     </footer>
+    <div class="registration"> 
+      <div class="reg__window-entry">
+        <div class="reg__title">Необходимо войти!</div>
+        <div class="reg__block">
+          <button class="reg__entry">Вход </button>
+          <button class="reg__registration">Регистрация</button>
+        </div>
+        <form class="reg__form" id="form" action="">
+          <div class="reg__email">Введите email</div>
+          <input class="reg__email-input" type="email" placeholder="example@email.com">
+          <div class="reg__pass">Введите пароль</div>
+          <input class="reg__pass-input" type="password" placeholder="">
+          <div class="reg__pass-err">* Введен неверный пароль или профиль для данного e-mail не существует</div>
+          <div class="reg__btn">
+            <button class="reg__btn_entry">В о й т и</button>
+          </div>
+        </form>
+      </div>
+      <div class="reg__window-reg">
+        <div class="reg__block">
+          <button class="reg__entry-reg">Вход </button>
+          <button class="reg__registration-reg">Регистрация</button>
+        </div>
+        <form class="reg__form-reg" id="form" action="">
+          <div class="reg__email-reg">Введите email</div><input class="reg__email-input-reg" type="email" placeholder="example@email.com" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" title="e-mail указан не верно" required/>
+          <div class="reg__tel-reg">Введите телефон</div><input class="reg__tel-input-reg" type="tel" placeholder="+375 (* *) * * * * * * *" pattern="\+37529[0-9]{7}|\+37525[0-9]{7}|\+37533[0-9]{7}|\+37544[0-9]{7}|" title="Введите номер в формате +375 (* *) * * * * * * *" required />
+          <div class="reg__pass-reg">Введите пароль</div>
+          <input class="reg__pass-input-reg" type="password" placeholder="" pattern="(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9]{1,}).{8,}" title="Должно содержать по крайней мере одно число, одну заглавную и строчную буквы, а также не менее 8 и более символов" required>
+          <div class="reg__pass-reg">Повторите пароль</div>
+          <input class="reg__pass-input-reg pass" type="password" placeholder="" required>
+          <div class="reg__err"> * Пароли не совпадают</div>
+          <div class="reg__btn-reg">
+            <button class="reg__btn_entry-reg">Создать профиль</button>
+          </div>
+        </form>
+      </div>
+    </div>
+    <script src="./assets/js/app.js"></script>
   </body>
 </html>

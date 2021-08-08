@@ -28,8 +28,8 @@
     &__subtitle{
         font-style: normal;
         font-weight: 600;
-        font-size: 22px;
-        line-height: 27px;
+        font-size: 2.2rem;
+        line-height: 2.7rem;
         color: #333333;
         display: flex;
         align-items: center;
@@ -113,16 +113,16 @@
     &__price-now{
         font-style: normal;
         font-weight: 600;
-        font-size: 20px;
-        line-height: 24px;
+        font-size: 2rem;
+        line-height: 2.4rem;
         color: #333333;
         margin-right: 1.2rem;
     }
     &__price-old{
         font-style: normal;
         font-weight: 600;
-        font-size: 16px;
-        line-height: 20px;
+        font-size: 1.6rem;
+        line-height: 2rem;
         text-decoration-line: line-through;
         color: #B8A99C;
     }
@@ -154,15 +154,15 @@
     &__link-top{
         font-style: normal;
         font-weight: normal;
-        font-size: 16px;
-        line-height: 25px;
+        font-size: 1.6rem;
+        line-height: 2.5rem;
         color: #333333;
     }
     &__link-bottom{
         font-style: normal;
         font-weight: normal;
-        font-size: 16px;
-        line-height: 25px;
+        font-size: 1.6rem;
+        line-height: 2.5rem;
         color: #A39385;
         margin-bottom: 8.6rem;
     }
@@ -182,24 +182,24 @@
     &__input-title{
         font-style: normal;
         font-weight: 600;
-        font-size: 22px;
-        line-height: 27px;
+        font-size: 2.2rem;
+        line-height: 2.7rem;
         color: #333333;
         margin-bottom: 2rem;
     }
     &__input-name{
         font-style: normal;
         font-weight: 600;
-        font-size: 14px;
-        line-height: 35px;
+        font-size: 1.4rem;
+        line-height: 3.5rem;
         color: #333333;
     }
     &__input-btn{
         width: 20rem;
         height: 5rem;
         font-weight: 600;
-        font-size: 16px;
-        line-height: 20px;
+        font-size: 1.6rem;
+        line-height: 2rem;
         display: flex;
         align-items: center;
         justify-content: center;
@@ -231,8 +231,8 @@
         margin-left: 5rem;
         font-style: normal;
         font-weight: 600;
-        font-size: 22px;
-        line-height: 27px;
+        font-size: 2.2rem;
+        line-height: 2.7rem;
         color: #333333;
     }
     &__links{
@@ -252,8 +252,8 @@
         white-space: nowrap;
         font-style: normal;
         font-weight: normal;
-        font-size: 16px;
-        line-height: 36px;
+        font-size: 1.6rem;
+        line-height: 3.6rem;
         color: #000000;
         margin-right: 2rem;
     }
@@ -262,8 +262,8 @@
         white-space: nowrap;
         font-style: normal;
         font-weight: normal;
-        font-size: 16px;
-        line-height: 36px;
+        font-size: 1.6rem;
+        line-height: 3.6rem;
         color: #A39385;
     }
    
